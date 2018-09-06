@@ -2,6 +2,8 @@ $( document ).ready(function() {
 
     // create var and DOM references
     var crystals = ['assets/images/red.png','assets/images/blue.png','assets/images/yellow.png','assets/images/green.png'];
+    var clickSound = document.getElementById("clickSound");
+    var jingleSound = document.getElementById("jingleSound");
     var randomNumber = $('#randomNumber');
     var wins = $('#wins');
     var winsCt = 0;
@@ -48,13 +50,21 @@ $( document ).ready(function() {
         return number;
     }
 
+    // function to play sound
+	function sound(soundFile) {
+		soundFile.loop = false;
+        soundFile.play();
+	}
+
     // function to start the game
     function startGame() {
         //generate crystals
         generateCrystals();
         // setup event listner for all crystals
         $(".crystal-image").on("click", function() {
-            // creat var to hold the crystals value and parse as integer
+            // play click sound when clicked
+            sound(clickSound);
+            // create var to hold the crystals value and parse as integer
             var crystalValue = ($(this).attr("data-crystalvalue"));
             crystalValue = parseInt(crystalValue);
             // update score and display
@@ -62,12 +72,14 @@ $( document ).ready(function() {
             totalScore.text(scoreCounter);
             // win and lose logic
             if (scoreCounter === numberToWin) {
+                sound(jingleSound);
                 $('#win-status').text('YOU WIN!');
                 winsCt++;
                 wins.text(winsCt);
                 resetGame();
                 startGame();
             } else if (scoreCounter > numberToWin) {
+                sound(jingleSound);
                 $('#win-status').text('YOU LOSE!');
                 lossesCt++;
                 losses.text(lossesCt);
