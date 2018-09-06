@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
     // create var and DOM references
+    var crystals = ['assets/images/red.png','assets/images/blue.png','assets/images/yellow.png','assets/images/green.png'];
     var randomNumber = $('#randomNumber');
     var wins = $('#wins');
     var winsCt = 0;
@@ -22,8 +23,8 @@ $( document ).ready(function() {
             var crystalValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
             // create crystal var and add class/attr and add to page
             var imageCrystal = $("<img>");
-            imageCrystal.addClass("crystal-image img-thumbnail");
-            imageCrystal.attr("src", "assets/images/amethyst.png");
+            imageCrystal.addClass("crystal-image");
+            imageCrystal.attr("src", crystals[i]);
             imageCrystal.attr("data-crystalvalue", crystalValue);
             $("#crystals").append(imageCrystal);
         }
