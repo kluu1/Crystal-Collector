@@ -1,0 +1,66 @@
+body {
+    background-image: url("../images/round.png");
+    background-repeat: repeat;
+}
+
+div {
+    margin-top: 10px;
+}
+
+.box {
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+#title {
+    background-color: orange;
+    padding: 20px;
+}
+
+#instructions {
+    background-color: peachpuff;
+    padding: 40px 10px 40px 10px;
+}
+
+#numberToWin {
+    background-color: #78c586;
+}
+
+#wins-counter {
+    background-color: aquamarine;
+}
+
+.scorebox {
+    background-color: #519f94;
+}
+
+#crystals {
+    background-color: white;
+    text-align: center;
+}
+
+.crystal-image {
+    margin: 0px 10px 0px 10px;
+    width: 120px;
+    height: 120px;
+}
+
+#randomNumber {
+    color: #6e6388;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#score-title {
+    color: #fff;
+    margin: 5px;
+}
+
+#totalScore {
+    font-size: 36px;
+    color: #fff;
+}
+
+#totalScoreBox {
+    height: 150px;
+}
