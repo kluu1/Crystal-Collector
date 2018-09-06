@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    // create var for DOM references
+    // create var and DOM references
     var randomNumber = $('#randomNumber');
     var wins = $('#wins');
     var winsCt = 0;
@@ -14,20 +14,22 @@ $( document ).ready(function() {
     var numberToWin = generateNewNumber();
     randomNumber.text(numberToWin);
 
+    // function to generate crystals
     function generateCrystals() {
         // create crystal images with class/attr and add to the page
         for (i = 0; i < numberOfCrystals; i++) {
-        // generate random number between 19-120
-        var crystalValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-        // create crystal var and add class/attr and add to page
-        var imageCrystal = $("<img>");
-        imageCrystal.addClass("crystal-image img-thumbnail");
-        imageCrystal.attr("src", "assets/images/amethyst.png");
-        imageCrystal.attr("data-crystalvalue", crystalValue);
-        $("#crystals").append(imageCrystal);
+            // generate random number between 19-120
+            var crystalValue = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+            // create crystal var and add class/attr and add to page
+            var imageCrystal = $("<img>");
+            imageCrystal.addClass("crystal-image img-thumbnail");
+            imageCrystal.attr("src", "assets/images/amethyst.png");
+            imageCrystal.attr("data-crystalvalue", crystalValue);
+            $("#crystals").append(imageCrystal);
         }
     }
 
+    // function to reset the game
     function resetGame() {
         // reset total score
         scoreCounter = 0;
@@ -39,11 +41,13 @@ $( document ).ready(function() {
         $('#crystals').empty();
     }
 
+    // function to generate new number
     function generateNewNumber() {
         number = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
         return number;
     }
 
+    // function to start the game
     function startGame() {
         //generate crystals
         generateCrystals();
