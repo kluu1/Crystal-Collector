@@ -3,6 +3,11 @@ body {
     background-repeat: repeat;
 }
 
+h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
 div {
     margin-top: 10px;
 }

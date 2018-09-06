@@ -14,54 +14,45 @@
   </head>
   <body>
     <div class="container">
-
-        <div class="row">
-            <div class="col-md-8 box" id="title">
-                <h1>Crystal Collector!</h1>
-            </div>
+      <div class="row">
+        <div class="col-md-8 box" id="title">
+          <h1>Crystal Collector!</h1>
         </div>
-
-        <div class="row">
-            <div class="col-md-8 box" id="instructions">
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p>
-                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the value of each crystal.</p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 box" id="instructions">
+          <p>You will be given a random number at the start of the game.</p>
+          <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p>
+          <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+          <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p>Each time when the game starts, the game will change the value of each crystal.</p>
         </div>
-
-        <div class="row">
-            <div class="col-md-5 box" id="numberToWin">
-                <span id="randomNumber">0</span>
-            </div>
-            <div class="col-md-3 box" id="wins-counter">
-                <p id="win-status"></p>
-                <p>Wins: <span id="wins">0</span></p>
-                <p>Losses: <span id="losses">0</span></p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 box" id="numberToWin">
+          <span id="randomNumber">0</span>
         </div>
-
-        <div class="row">
-            <div class="col-md-8 box" id="crystals">
-            </div>
+        <div class="col-md-3 box" id="wins-counter">
+          <p id="win-status"></p>
+          <p>Wins: <span id="wins">0</span></p>
+          <p>Losses: <span id="losses">0</span></p>
         </div>
-
-        <div class="row">
-            <div class="col-md-8 box scorebox">
-                <p id="score-title">Your total score is:</p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 box" id="crystals">
         </div>
-
-        <div class="row">
-                <div class="col-md-8 box scorebox" id="totalScoreBox">
-                   <span id="totalScore">0</span>
-                </div>
-            </div>
-
+      </div>
+      <div class="row">
+        <div class="col-md-8 box scorebox">
+            <p id="score-title">Your total score is:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 box scorebox" id="totalScoreBox">
+            <span id="totalScore">0</span>
+        </div>
+      </div>
     </div>
-
-    
     <script src="assets/javascript/game.js"></script>
   </body>
 </html>
