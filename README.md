@@ -1,6 +1,7 @@
 # unit-4-game
 
 ## Crystals Collector Game
+Play the game now: https://kluu1.github.io/unit-4-game/
 - This is a guessing game using numbers where the player will guess with numbers.
 - There will be four crystals displayed as buttons on the page.
 - The player will be shown a random number at the start of the game.
@@ -15,5 +16,9 @@
 - The random number shown at the start of the game should be between 19 - 120
 - Each crystal should have a random hidden value between 1 - 12
 
-### Launch GitHub Pages
-https://kluu1.github.io/unit-4-game/
+## Technologies used
+- JavaScript
+- jQuery
+- Bootstrap
+- HTML5
+- CSS3
