@@ -42,6 +42,7 @@ $( document ).ready(function() {
             randomNumber.text(newNumberToWin);
             numberToWin = newNumberToWin;
             $('#crystals').empty();
+            game.startGame();
         },
          // function to play sound
          sound: function(soundFile) {
@@ -70,14 +71,12 @@ $( document ).ready(function() {
                     winsCt++;
                     wins.text(winsCt);
                     game.resetGame();
-                    game.startGame();
                 } else if (scoreCounter > numberToWin) {
                     game.sound(jingleSound);
                     $('#win-status').text('YOU LOSE!');
                     lossesCt++;
                     losses.text(lossesCt);
                     game.resetGame();
-                    game.startGame();
                 }   
             });
         }
