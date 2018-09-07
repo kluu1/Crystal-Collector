@@ -58,7 +58,6 @@ $( document ).ready(function() {
 
     // function to start the game
     function startGame() {
-        //generate crystals
         generateCrystals();
         // setup event listner for all crystals
         $(".crystal-image").on("click", function() {
@@ -89,7 +88,6 @@ $( document ).ready(function() {
         });
     }
 
-    // start the game!
     startGame();
 
 });
