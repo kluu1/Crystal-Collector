@@ -8,10 +8,6 @@ h1 {
     font-weight: bold;
 }
 
-div {
-    margin-top: 10px;
-}
-
 .box {
     border-radius: 10px;
     border: 2px solid gray;
@@ -29,10 +25,14 @@ div {
 
 #numberToWin {
     background-color: #78c586;
+    height: 150px;
+    padding-left: 5px;
 }
 
 #wins-counter {
     background-color: aquamarine;
+    padding: 10px;
+    height: 150px;
 }
 
 .scorebox {
@@ -64,8 +64,11 @@ div {
 #totalScore {
     font-size: 36px;
     color: #fff;
+    height: 150px;
+    padding-left: 5px;
 }
 
-#totalScoreBox {
-    height: 150px;
+.main-content {
+    width: 640px;
+    margin: 0 auto;
 }
