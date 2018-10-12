@@ -1,4 +1,4 @@
-# Crystals Collector Game
+# Crystal Collector Game
 Play the game now: https://kluu1.github.io/Crystal-Collector-Game/
 - This is a guessing game using numbers where the player will guess with numbers.
 - There will be four crystals displayed as buttons on the page.
