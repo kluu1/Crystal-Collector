@@ -11,7 +11,7 @@ Play the game now: https://kluu1.github.io/Crystal-Collector/
 - When the game is restarted, the player will be shown a new random number, all the crystals will now have 4 different hidden values, and the player's total score is reset to 0.
 
 # Preview
-![Alt text](/assets/images/crystals.jpg?raw=true "Screenshot")
+![Alt text](/assets/images/crystals.png?raw=true "Screenshot")
 
 ## Game design note:
 - The random number shown at the start of the game should be between 19 - 120
