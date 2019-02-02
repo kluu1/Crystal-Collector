@@ -63,8 +63,7 @@ h1 {
 
 #totalScore {
     font-size: 36px;
-    color: #fff;
-    height: 150px;
+    height: 120px;
     padding-left: 5px;
 }
 
@@ -72,3 +71,4 @@ h1 {
     width: 640px;
     margin: 0 auto;
 }
+
