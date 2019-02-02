@@ -1,7 +1,5 @@
-# unit-4-game
-
-## Crystals Collector Game
-Play the game now: https://kluu1.github.io/unit-4-game/
+# Crystal Collector
+Play the game now: https://kluu1.github.io/Crystal-Collector/
 - This is a guessing game using numbers where the player will guess with numbers.
 - There will be four crystals displayed as buttons on the page.
 - The player will be shown a random number at the start of the game.
